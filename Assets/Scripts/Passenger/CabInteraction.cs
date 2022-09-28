@@ -10,7 +10,6 @@ public class CabInteraction : MonoBehaviour
     [SerializeField] bool cabOnBoarded = false;
     [SerializeField] bool destinationNear = false;
     [SerializeField] bool destinationReached = false;
-    [SerializeField] Vector3 destinationTransformPosition;
     [SerializeField] Collider2D destinationGameObjectCollider;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
@@ -21,7 +20,6 @@ public class CabInteraction : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         destinationReached = false;
         destinationGameObjectCollider = null;
-        destinationTransformPosition = Vector3.zero;
         spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
